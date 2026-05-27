@@ -1,0 +1,36 @@
+.counter-box { text-align: center; margin-top: 50px; gap:10px }
+.pos { color: green; }
+.neg { color: red; }
+.counter-box {
+  text-align: center;
+  margin-top: 50px;
+  gap: 20px;
+}
+.pos {
+  color: green;
+}
+.neg {
+  color: red;
+}
+
+.buttons{
+background-color: rgb(80, 167, 244);
+.buttons {
+  background-color: rgb(184, 194, 204);
+}
+button {
+.btn {
+  width: 200px;
+  margin: 5px 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 5px;
+
+  background-color: #0da4e0 !important;
+}
+.btn:hover{
+  background-color: rgb(132, 124, 116) !important;
+}
+button:hover { background-color: #005f7a; }
