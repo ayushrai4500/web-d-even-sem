@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of Even Numbers</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .container{
+            width: 350px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        input{
+            padding: 8px;
+            width: 80%;
+            margin: 10px 0;
+        }
+
+        button{
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #0056b3;
+        }
+
+        #result{
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Sum of Even Numbers</h2>
+
+        <label>Enter N:</label><br>
+        <input type="number" id="num" placeholder="Enter a number"><br>
+
+        <button onclick="findSum()">Calculate</button>
+
+        <div id="result"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function findSum() {
+            let n = parseInt(document.getElementById("num").value);
+            let sum = 0;
+
+            for(let i = 1; i <= n; i++) {
+                if(i % 2 == 0) {
+                    sum += i;
+                }
+            }
+
+            document.getElementById("result").innerHTML =
+                "Sum of Even Numbers = " + sum;
+        }
+    </script>
+
+</body>
+</html>
